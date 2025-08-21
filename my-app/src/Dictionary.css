@@ -1,0 +1,15 @@
+.Dictionary {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.Dictionary form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-control {
+  padding: 10px;
+  margin: 5px 0;
+}
