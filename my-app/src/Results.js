@@ -6,22 +6,28 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2>{props.results.word}</h2>
-        {props.results.phonetics.map(function (phonetic, index) {
-          return (
-            <div key={index}>
-              <em>{phonetic.text}</em>
-              <br />
-              <audio controls src={phonetic.audio}></audio>
-            </div>
-          );
-        })}
-        {props.results.meanings.map(function (meaning, index) {
-          return (
-            <div key={index}>
-              <Meaning meaning={meaning} />
-            </div>
-          );
-        })}
+        <section className="border-bottom">
+          {props.results.phonetics
+            .filter((phonetics) => phonetics.audio)
+            .map(function (phonetic, index) {
+              return (
+                <div key={index}>
+                  <em>{phonetic.text}</em>
+                  <br />
+                  <audio controls src={phonetic.audio}></audio>
+                </div>
+              );
+            })}
+        </section>
+        <section className="border-bottom">
+          {props.results.meanings.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Meaning meaning={meaning} />
+              </div>
+            );
+          })}
+        </section>
       </div>
     );
   } else {

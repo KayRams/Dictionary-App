@@ -1,0 +1,17 @@
+.App {
+  margin: 0 auto;
+  background-size: cover;
+  background-position: absolute;
+  background-attachment: fixed;
+  background-image: url(workdesk.jpg);
+}
+
+.App-footer {
+  padding-bottom: 30px;
+  font-size: 14px;
+  color: black;
+}
+.App-footer a {
+  color: #4caf50;
+  text-decoration: underline;
+}
