@@ -7,11 +7,13 @@
 }
 
 .App-footer {
-  padding-bottom: 30px;
-  font-size: 14px;
+  padding-bottom: 35px;
+  font-size: 15px;
   color: black;
 }
 .App-footer a {
   color: #4caf50;
-  text-decoration: underline;
+  font-family: Noteworthy, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }

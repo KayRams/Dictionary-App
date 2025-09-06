@@ -19,7 +19,7 @@ export default function Results(props) {
               );
             })}
         </section>
-        <section className="border-bottom">
+        <section>
           {props.results.meanings.map(function (meaning, index) {
             return (
               <div key={index}>
